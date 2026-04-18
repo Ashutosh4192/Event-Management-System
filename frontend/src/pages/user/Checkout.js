@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { checkout } from '../../services/userService';
 import { validateCheckoutForm } from '../../utils/validation';
@@ -26,7 +26,7 @@ function Checkout() {
     if (Object.keys(errs).length > 0) { setErrors(errs); return; }
     setErrors({});
     try {
-      
+      await checkout(form);
       setOrderData({ ...form, grandTotal });
     } catch (err) {
       setServerError(err.response?.data?.message || 'Checkout failed');
