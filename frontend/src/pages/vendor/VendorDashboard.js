@@ -20,7 +20,7 @@ function VendorDashboard() {
         <div className="dashboard-nav" style={{ justifyContent: 'center' }}>
           <button className="btn btn-nav" onClick={() => navigate('/vendor/items')}>Your Item</button>
           <button className="btn btn-nav" onClick={() => navigate('/vendor/items')}>Add New Item</button>
-          <button className="btn btn-nav" onClick={() => navigate('/vendor/status')}>Transection</button>
+          <button className="btn btn-nav" onClick={() => navigate('/vendor/status')}>Transaction</button>
           <button className="btn btn-nav" onClick={handleLogout}>LogOut</button>
         </div>
       </div>
