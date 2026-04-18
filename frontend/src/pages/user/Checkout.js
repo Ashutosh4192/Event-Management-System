@@ -26,7 +26,7 @@ function Checkout() {
     if (Object.keys(errs).length > 0) { setErrors(errs); return; }
     setErrors({});
     try {
-      const res = await checkout(form);
+      
       setOrderData({ ...form, grandTotal });
     } catch (err) {
       setServerError(err.response?.data?.message || 'Checkout failed');
