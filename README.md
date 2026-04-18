@@ -2,6 +2,8 @@
 
 A full-stack event management application built with React and Node.js/Express.
 
+Live Link - https://eventmanagement-blush.vercel.app/
+
 ## Features
 
 ### Admin
